@@ -1,0 +1,522 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>  
+  <meta charset="utf-8"/>  
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>  
+  <title>Portfolio - Raditya Cahya Wirawan</title>  
+  <script src="https://cdn.tailwindcss.com"></script>  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>  
+  <link href="style.css" rel="stylesheet"/>  
+</head>  
+<body class="bg-[#041c24] text-white min-h-screen">  
+<!-- Sticky Header Component -->
+<!-- Header component – CSS-only animations, no external script included -->
+<header class="bg-[#041c24] sticky top-0 z-50 w-full flex items-center justify-between px-4 sm:px-8 py-6">
+  <!-- Logo / Brand -->
+  <h1 class="font-bold text-2xl select-none mr-14 cursor-pointer transition-transform duration-300 hover:scale-105">
+    <span class="text-white hover:text-red-600 transition-colors duration-300">Port</span><span class="text-red-600">folio</span>
+  </h1>  <!-- Navigation: clamps width to 460px on lg+ screens, horizontal scroll on overflow -->  <nav class="ml-3 sm:ml-6 max-w-full lg:max-w-[460px] overflow-x-auto scrollbar-hide" aria-label="Primary Navigation">
+    <ul class="flex space-x-6 sm:space-x-10 text-lg select-none whitespace-nowrap px-2">
+      <li>
+        <a href="#home" class="relative text-white transition-all duration-300 hover:text-red-600 before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-full before:bg-red-600 before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100">Home</a>
+      </li>
+      <li>
+        <a href="#about" class="relative text-white transition-all duration-300 hover:text-red-600 before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-full before:bg-red-600 before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100">About</a>
+      </li>
+      <li>
+        <a href="#skills" class="relative text-white transition-all duration-300 hover:text-red-600 before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-full before:bg-red-600 before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100">Skills</a>
+      </li>
+      <li>
+        <a href="#projects" class="relative text-white transition-all duration-300 hover:text-red-600 before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-full before:bg-red-600 before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100">Projects</a>
+      </li>
+      <li>
+        <a href="#contact" class="relative text-white transition-all duration-300 hover:text-red-600 before:absolute before:left-0 before:-bottom-1 before:h-0.5 before:w-full before:bg-red-600 before:origin-left before:scale-x-0 before:transition-transform before:duration-300 hover:before:scale-x-100">Contact</a>
+      </li>
+
+    </ul>
+  </nav>
+</header>  <main>  
+    <!-- Hero Section -->  
+    <section id="home" class="flex flex-1 flex-col md:flex-row items-center justify-center px-8 md:px-20 gap-12 md:gap-24 min-h-[calc(100vh-100px)]">  
+      <section class="relative flex justify-center items-center">  
+        <div class="rounded-full border-8 border-red-600 p-1 shadow-[0_0_50px_20px_rgba(255,77,77,0.7)]">  
+          <img alt="Cartoon avatar of a young man with black hair wearing a black t-shirt with a white logo on the chest, on a light beige circular background with a glowing red border" class="rounded-full w-72 h-72 object-cover" height="300" src="/IMG/IMG-20250711-WA0192.png" width="300" />  
+        </div>  
+      </section> 
+      <section class="max-w-xl flex flex-col space-y-6">  
+    <div class="text-white">  
+      <p class="font-semibold text-xl">Hello, It's Me</p>  
+      <h1 class="font-extrabold text-4xl md:text-5xl leading-tight">Raditya Cahya Wirawan</h1>  
+      <p class="font-semibold text-xl">And I am a college student who loves to learn.</p>  
+    </div>  
+    <p class="text-white text-base max-w-md">  
+      I am a college student who loves to learn and explore new technologies. Passionate about web development and always eager to take on new challenges.  
+    </p>  
+    <div class="flex space-x-6">  
+      <a aria-label="github" class="border border-red-600 rounded-full p-3 text-red-600 hover:bg-red-600 hover:text-[#041c24] transition" href="https://github.com/DitzzHost" target="_blank">  
+        <i class="fab fa-github"></i>  
+      </a>
+            <a aria-label="Instagram" class="border border-red-600 rounded-full p-3 text-red-600 hover:bg-red-600 hover:text-[#041c24] transition" href="https://www.instagram.com/radityacahyawirawan" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a aria-label="WhatsApp" class="border border-red-600 rounded-full p-3 text-red-600 hover:bg-red-600 hover:text-[#041c24] transition" href="https://wa.me/6283194451891" target="_blank">  
+        <i class="fab fa-whatsapp"></i>  
+      </a>  
+      <a aria-label="TikTok" class="border border-red-600 rounded-full p-3 text-red-600 hover:bg-red-600 hover:text-[#041c24] transition" href="https://tiktok.com/@ditzzhoting" target="_blank">  
+        <i class="fab fa-tiktok"></i>  
+      </a>  
+    </div>  
+    <button class="mt-4 w-max bg-red-600 text-[#041c24] font-semibold rounded-full px-6 py-2 tracking-widest shadow-[0_0_20px_#ff0000] hover:shadow-[0_0_30px_#ff0000] transition" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">  
+      More About Me  
+    </button>  
+  </section>  
+</section>  
+
+<!-- About Section -->  
+<section class="mb-16 flex flex-col md:flex-row items-center md:items-start md:space-x-12 px-8 md:px-20 py-16" id="about">  
+  <div class="w-full md:w-1/3 flex justify-center mb-8 md:mb-0">  
+    <img alt="Portrait of Raditta Cahya Wirawan" class="rounded-full shadow-lg w-48 h-48 object-cover" height="300" loading="lazy" src="/IMG/IMG-20250711-WA0192.png" width="300"/>  
+  </div>  
+  <div class="w-full md:w-2/3">  
+    <h2 class="text-4xl font-extrabold text-red-600 mb-4">About Me</h2>  
+    <p class="text-lg leading-relaxed mb-6">  
+      Hello! I'm Raditya Cahya Wirawan, a passionate college student with a deep love for learning and exploring new technologies. I'm particularly interested in web development and enjoy creating beautiful, functional websites and applications.  
+    </p>  
+    <p class="text-lg leading-relaxed">  
+      As a student, I'm constantly expanding my knowledge and skills. I believe in the power of continuous learning and am always eager to take on new challenges that help me grow both personally and professionally. My goal is to become a skilled developer who can create meaningful digital experiences.  
+    </p>  
+  </div>  
+</section>  
+  
+<section id="skills" class="skills-section px-8 md:px-20">
+  <!-- 1) Tambahkan spasi setelah `section-title` + ubah mb-4 → mb-8 -->
+<h2 class="section-title text-4xl font-extrabold mb-8 text-center">
+  <span class="text-white">My</span> <span class="text-red-600">Skills</span>
+</h2>
+
+
+  <div class="skills-grid mt-6">
+    <!-- HTML Skill -->
+    <div class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon html-icon">
+          <img src="/ICON/HTML.png" alt="HTML Icon" class="w-15 h-15" />
+        </div>
+        <h3 class="skill-title">HTML5</h3>
+      </div>
+
+      <div class="skill-level">
+        <span class="level-text">Expert Level:</span>
+        <div class="level-stars">
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="skill-progress">
+        <div class="progress-bar">
+          <div class="progress-fill html-progress" style="width:88%"></div>
+        </div>
+      </div>
+
+      <ul class="skill-list">
+        <li>Semantic HTML Structure</li><li>Accessibility (ARIA)</li>
+        <li>SEO Optimization</li><li>HTML5 APIs (Canvas, Video)</li>
+        <li>Form Validation</li><li>Microdata & Schema.org</li>
+      </ul>
+      <span class="experience-years">6+ Months Of Experience</span>
+    </div>
+
+    <!-- CSS Skill -->
+    <div class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon css-icon">
+          <img src="/ICON/CSS.png" alt="CSS Icon" class="w-13 h-13" />
+        </div>
+        <h3 class="skill-title">CSS</h3>
+      </div>
+
+      <div class="skill-level">
+        <span class="level-text">Advanced Level:</span>
+        <div class="level-stars">
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star">★</span><span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="skill-progress">
+        <div class="progress-bar">
+          <div class="progress-fill css-progress" style="width:75%"></div>
+        </div>
+      </div>
+
+      <ul class="skill-list">
+        <li>Flexbox & Grid</li><li>Responsive Design</li>
+        <li>CSS Animations</li><li>SASS/SCSS</li>
+        <li>BEM Methodology</li><li>CSS Variables</li>
+      </ul>
+      <span class="experience-years">6+ Months Of Experience</span>
+    </div>
+
+    <!-- JavaScript Skill -->
+    <div class="skill-card">
+      <div class="skill-header">
+        <div class="skill-icon js-icon">
+          <img src="/ICON/JAVASCRIPT.png" alt="JavaScript Icon" class="w-8 h-8" />
+        </div>
+        <h3 class="skill-title">JavaScript</h3>
+      </div>
+
+      <div class="skill-level">
+        <span class="level-text">Intermediate Level:</span>
+        <div class="level-stars">
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star filled">★</span><span class="star filled">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="skill-progress">
+        <div class="progress-bar">
+          <div class="progress-fill js-progress" style="width:96%"></div>
+        </div>
+      </div>
+
+      <ul class="skill-list">
+        <li>ES6+ Modern JavaScript</li><li>DOM Manipulation</li>
+        <li>Async/Await & Promises</li><li>Event Handling</li>
+        <li>Web Storage</li><li>Fetch API & AJAX</li>
+      </ul>
+      <span class="experience-years">2+ Years Experience</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Services Section ===== -->
+<section id="services" class="services-section px-8 md:px-20 py-12">
+  <!-- Section Title -->
+  <h2 class="service-title text-4xl font-extrabold mb-10 text-center">
+    <span class="text-white">My</span> <span class="text-red-600">Services</span>
+  </h2>
+
+  <div class="services-grid grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <!-- HTML Service -->
+    <div class="service-card p-6 rounded-2xl shadow-lg backdrop-blur bg-gradient-to-br from-red-600/20 to-white/5 space-y-6">
+      <div class="service-icon w-16 h-16 lg:w-20 lg:h-20 rounded-full overflow-hidden flex items-center justify-center bg-orange-600/80 mx-auto">
+        <img src="/ICON/HTML.png" alt="HTML Icon" class="w-2/3 h-2/3 object-contain" />
+      </div>
+      <h3 class="text-xl font-semibold text-center text-white">HTML Development</h3>
+      <p class="text-sm opacity-80 text-center text-white">Struktur website yang solid dan semantik dengan HTML5 modern</p>
+      <ul class="text-sm list-disc list-inside space-y-1 opacity-90 text-white">
+        <li>HTML5 Semantic Elements</li><li>Responsive Structure</li>
+        <li>SEO Optimization</li><li>Accessibility Standards</li>
+        <li>Form Validation</li><li>Meta Tags Optimization</li>
+      </ul>
+      <div class="font-semibold text-center text-white">
+        Mulai dari <span class="text-red-400">Rp 500.000</span>
+      </div>
+      <button class="w-full rounded-lg bg-red-600 py-2 font-semibold text-white"
+              onclick="contactService('HTML')">Pesan Sekarang</button>
+    </div>
+
+    <!-- CSS Service -->
+    <div class="service-card p-6 rounded-2xl shadow-lg backdrop-blur bg-gradient-to-br from-blue-600/20 to-white/5 space-y-6">
+      <div class="service-icon w-16 h-16 lg:w-20 lg:h-20 rounded-full overflow-hidden flex items-center justify-center bg-blue-600/80 mx-auto">
+        <img src="/ICON/CSS.png" alt="CSS Icon" class="w-2/3 h-2/3 object-contain" />
+      </div>
+      <h3 class="text-xl font-semibold text-center text-white">CSS Styling</h3>
+      <p class="text-sm opacity-80 text-center text-white">Desain visual yang menawan dan responsif dengan CSS3 advanced</p>
+      <ul class="text-sm list-disc list-inside space-y-1 opacity-90 text-white">
+        <li>Responsive Design</li><li>CSS Grid &amp; Flexbox</li>
+        <li>Animations &amp; Transitions</li><li>Modern CSS Features</li>
+        <li>Cross-browser Compatibility</li><li>Performance Optimization</li>
+      </ul>
+      <div class="font-semibold text-center text-white">
+        Mulai dari <span class="text-blue-400">Rp 750.000</span>
+      </div>
+      <button class="w-full rounded-lg bg-blue-600 py-2 font-semibold text-white"
+              onclick="contactService('CSS')">Pesan Sekarang</button>
+    </div>
+
+    <!-- JavaScript Service -->
+    <div class="service-card p-6 rounded-2xl shadow-lg backdrop-blur bg-gradient-to-br from-yellow-500/20 to-white/5 space-y-6">
+      <div class="service-icon w-16 h-16 lg:w-20 lg:h-20 rounded-full overflow-hidden flex items-center justify-center bg-yellow-300 mx-auto">
+        <img src="/ICON/JAVASCRIPT.png" alt="JavaScript Icon" class="w-2/3 h-2/3 object-contain" />
+      </div>
+      <h3 class="text-xl font-semibold text-center text-white">JavaScript Development</h3>
+      <p class="text-sm opacity-80 text-center text-white">Interaktivitas dan fungsionalitas dengan JavaScript ES6+</p>
+      <ul class="text-sm list-disc list-inside space-y-1 opacity-90 text-white">
+        <li>ES6+ Modern JavaScript</li><li>DOM Manipulation</li>
+        <li>Event Handling</li><li>AJAX &amp; Fetch API</li>
+        <li>Local Storage</li><li>Interactive Components</li>
+      </ul>
+      <div class="font-semibold text-center text-white">
+        Mulai dari <span class="text-yellow-300">Rp 1.000.000</span>
+      </div>
+      <button class="w-full rounded-lg bg-yellow-500 py-2 font-semibold text-white"
+              onclick="contactService('JavaScript')">Pesan Sekarang</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Order Modal (Dark) ===== -->
+<div id="orderModal"
+     class="fixed inset-0 bg-black/50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-50">
+  <div class="bg-gray-900 text-white w-full max-w-md p-6 rounded-2xl shadow-xl relative">
+    <!-- Tombol tutup -->
+    <button class="absolute top-3 right-3 text-2xl leading-none text-gray-300 hover:text-white"
+            onclick="toggleOrder(false)">×</button>
+
+    <h3 class="text-xl font-bold mb-4">Informasi Pesanan Layanan</h3>
+
+    <form id="orderForm" class="space-y-4">
+      <div>
+        <label class="block font-medium mb-1">Layanan</label>
+        <input id="serviceField" type="text" readonly
+               class="w-full rounded-lg border border-gray-600 bg-gray-800 text-white px-4 py-2">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Nama</label>
+        <input id="nameField" required
+               class="w-full rounded-lg border border-gray-600 bg-gray-800 text-white px-4 py-2">
+      </div>
+
+      <div>
+
+        <label class="block font-medium mb-1">Kontak (Email / No. HP)</label>
+         <input id="contactField" type="text" required
+                placeholder="you@example.com atau 62812-3456-7890"
+                class="w-full rounded-lg border border-gray-600 bg-gray-800 text-white px-4 py-2">
+      </div>
+
+      <div>
+        <label class="block font-medium mb-1">Keterangan Tambahan</label>
+        <textarea id="descField" rows="3"
+                  class="w-full rounded-lg border border-gray-600 bg-gray-800 text-white px-4 py-2"></textarea>
+      </div>
+
+      <button type="submit"
+              class="w-full mt-4 rounded-lg bg-green-600 hover:bg-green-700 px-6 py-2 font-semibold text-white">
+        Kirim
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== MY PROJECTS ===== --> 
+  <section id="projects" class="max-w-7xl mx-auto px-4 md:px-8 py-16 w-full">
+    <!-- Section Title -->
+    <h2 class="projects-title text-4xl font-extrabold mb-12 text-center">
+      <span class="text-white">My</span> <span class="text-red-600">Projects</span>
+    </h2><!-- Slider Container -->
+    <div class="relative">
+      <!-- Slides Wrapper (viewport) -->
+      <div id="slidesWrapper" class="overflow-hidden">
+        <!-- Slides Track -->
+        <div class="flex transition-transform duration-500" id="slidesTrack">
+          <!-- Slide 1 -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg h-full flex flex-col">
+              <img src="/PROJECTS/PROJECTS1.jpg" alt="Project 1" class="rounded-xl mb-4 w-full h-60 object-cover" />
+              <h3 class="text-2xl font-semibold mb-2">Personal Portfolio Website</h3>
+              <p class="text-gray-400 mb-4 flex-grow">A responsive website built to showcase my projects, skills, and contact info. Built using HTML, Tailwind CSS, and JavaScript.</p>
+              <!-- Buttons Container -->
+              <div class="flex gap-2 mt-auto flex-wrap">
+                <a href="#" class="inline-block px-4 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition">Lihat Detail</a>
+                <!-- <a href="#" class="inline-block px-4 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">Source Code</a>-->
+              </div>
+            </div>
+          </div>
+        <!-- Slide 2 -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-lg h-full flex flex-col">
+              <img src="/PROJECTS/PROJECTS2.jpg" alt="Project 1" class="rounded-xl mb-4 w-full h-60 object-cover" />
+              <h3 class="text-2xl font-semibold mb-2">Website Marketing</h3>
+              <p class="text-gray-400 mb-4 flex-grow">A modern online store with a responsive design that makes it easy for customers to browse and purchase products quickly. Built using the latest web technologies.</p>
+              <!-- Buttons Container -->
+              <div class="flex gap-2 mt-auto flex-wrap">
+                <a href="#" class="inline-block px-4 py-2 bg-red-600 rounded-lg hover:bg-red-700 transition">Lihat Detail</a>
+                <!-- <a href="#" class="inline-block px-4 py-2 border border-red-600 text-red-600 rounded-lg hover:bg-red-600 hover:text-white transition">Source Code</a>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Navigation Buttons -->
+      <button id="prevBtn" aria-label="Previous slide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-gray-700/70 backdrop-blur p-3 rounded-full hover:bg-gray-700 focus:outline-none">
+        <!-- Heroicon: chevron-left -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button id="nextBtn" aria-label="Next slide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-gray-700/70 backdrop-blur p-3 rounded-full hover:bg-gray-700 focus:outline-none">
+        <!-- Heroicon: chevron-right -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+      
+      <!-- Indicators (dots) -->
+      <div id="indicators" class="flex justify-center mt-6 space-x-2"></div>
+      
+      <!-- Slide Counter -->
+      <div id="slideCounter" class="absolute bottom-4 right-4 text-sm text-gray-400"></div>
+    </div>
+    
+  </section>
+
+<!-- ===== Contact Section (Extra-Dark) ===== --> 
+<section id="contact"  
+         class="relative isolate overflow-hidden px-6 py-20 sm:px-8 lg:px-12 xl:px-16 2xl:px-24">    <div class="mx-auto max-w-4xl">  
+    <h2 class="contact-title text-center text-4xl font-extrabold mb-2">    
+    <span class="text-white">Get in</span> <span class="text-red-600">Touch</span>
+    </h2>  
+    <p class="text-center text-gray-300 mt-4 mb-12">  
+      Punya ide proyek, pertanyaan, atau cuma mau say hi? Kirim pesan lewat form atau hubungi langsung.  
+    </p>  <!-- Contact Cards -->  
+<div class="grid gap-6 md:grid-cols-2">  
+  <!-- Email -->  
+  <div class="bg-gray-800/80 backdrop-blur-md rounded-xl shadow-lg p-6 flex items-start gap-4 hover:shadow-fuchsia-700 transition">  
+    <i class="fas fa-envelope text-3xl text-fuchsia-400"></i>  
+    <div>  
+      <h3 class="text-lg font-semibold">Email</h3>  
+      <a href="mailto:radittyachyawrwan@gmail.com"  
+         class="block text-gray-200 hover:text-fuchsia-400">radittyachyawrwan@gmail.com</a>  
+      <button id="copyEmail" class="text-sm mt-2 hover:underline text-gray-400 hover:text-white">  
+        <i class="far fa-copy mr-1"></i> Copy Email  
+      </button>  
+    </div>  
+  </div>  
+
+  <!-- WhatsApp -->  
+  <div class="bg-gray-800/80 backdrop-blur-md rounded-xl shadow-lg p-6 flex items-start gap-4 hover:shadow-emerald-600 transition">  
+    <i class="fab fa-whatsapp text-3xl text-emerald-400"></i>  
+    <div>  
+      <h3 class="text-lg font-semibold">WhatsApp</h3>  
+      <a href="https://wa.me/6283194451891"  
+         class="block text-gray-200 hover:text-emerald-400">+62 831-9445-1891</a>  
+      <p class="text-sm text-gray-400">Senin - Jumat, 09.00 - 17.00 WIB</p>  
+    </div>  
+  </div>  
+
+  <!-- Lokasi -->  
+  <div class="bg-gray-800/80 backdrop-blur-md rounded-xl shadow-lg p-6 flex items-start gap-4 hover:shadow-rose-700 transition">  
+    <i class="fas fa-map-marker-alt text-3xl text-rose-400"></i>  
+    <div>  
+      <h3 class="text-lg font-semibold">Lokasi</h3>  
+      <p class="text-gray-200">Jakarta, Indonesia</p>  
+    </div>  
+  </div>  
+
+  <!-- Sosial Media -->  
+  <div class="bg-gray-800/80 backdrop-blur-md rounded-xl shadow-lg p-6 flex items-start gap-4 hover:shadow-blue-700 transition">  
+    <i class="fas fa-share-alt text-3xl text-sky-400"></i>  
+    <div>  
+      <h3 class="text-lg font-semibold">Sosial Media</h3>  
+      <div class="flex gap-4 mt-1">  
+        <!-- GitHub -->  
+        <a href="https://github.com/DitzzHost" target="_blank" class="hover:text-blue text-xl">  
+          <i class="fab fa-github"></i>  
+        </a>  
+        <!-- TikTok -->  
+        <a href="https://tiktok.com/@ditzzhoting" target="_blank" class="hover:text-pink-400 text-xl">  
+          <i class="fab fa-tiktok"></i>  
+        </a>  
+        <!-- Instagram -->  
+        <a href="https://www.instagram.com/radityacahyawirawan" target="_blank" class="hover:text-rose-400 text-xl">  
+          <i class="fab fa-instagram"></i>  
+        </a>  
+        <!-- Telegram -->  
+        <a href="https://t.me/@RadittyaCahyaWirawan" target="_blank" class="hover:text-blue-400 text-xl">  
+          <i class="fab fa-telegram-plane"></i>  
+        </a>  
+      </div>  
+    </div>  
+  </div>  
+</div>  
+
+<!-- Divider -->  
+<div class="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>  
+
+  <form name="contact" method="POST" data-netlify="true" class="grid gap-6">
+    <!-- Netlify form identifier -->
+    <input type="hidden" name="form-name" value="contact" />
+    <!-- Honeypot -->
+    <p class="hidden">
+      <label>Jangan diisi: <input name="bot-field" /></label>
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <input
+        type="text"
+        name="name"
+        placeholder="Nama"
+        class="w-full rounded-lg bg-gray-800 text-white placeholder-gray-400 border border-gray-700 p-4 focus:ring-2 focus:ring-fuchsia-500"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        class="w-full rounded-lg bg-gray-800 text-white placeholder-gray-400 border border-gray-700 p-4 focus:ring-2 focus:ring-fuchsia-500"
+        required
+      />
+    </div>
+
+    <textarea
+      name="message"
+      rows="6"
+      placeholder="Pesan"
+      class="w-full rounded-lg bg-gray-800 text-white placeholder-gray-400 border border-gray-700 p-4 focus:ring-2 focus:ring-fuchsia-500 resize-none"
+      required
+    ></textarea>
+
+    <button
+      type="submit"
+      class="inline-flex justify-center rounded-xl bg-red-600 px-8 py-3 font-semibold transition hover:bg-red-500 active:scale-95"
+    >
+      Kirim Pesan
+    </button>
+  </form>
+
+  </div>  
+</section> 
+
+<footer class=" py-8 mt-12">
+  <div class="container mx-auto px-4 text-center">
+    <!-- Nama atau Quote -->
+    <h2 class="text-xl font-semibold mb-2">Raditya Cahya Wirawan | Web Developer</h2>
+
+    <!-- Navigasi Footer -->
+    <div class="flex justify-center gap-6 text-sm mb-4">
+      <a href="#home" class="hover:text-sky-400 transition">Home</a>
+      <a href="#about" class="hover:text-sky-400 transition">About</a>
+      <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+      <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+      <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="flex justify-center gap-4 text-lg mb-4">
+      <a href="https://github.com/DitzzHost" target="_blank" class="hover:text-sky-400 transition">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://wa.me/6283194451891" target="_blank" class="hover:text-sky-400 transition">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://tiktok.com/@ditzzhoting" class="hover:text-sky-400 transition">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+  
+ <script src="main.js"></script>
+ </body>  
+</html>
